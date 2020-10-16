@@ -3,7 +3,8 @@ A program that detects up to 8 controllers and checks 16 buttons. Supports Plays
 
 All assets are made by me and the program is made in a day with godot 3.2
 
-** THIS PAGE ONLY CONTAINS THE SOURCE **
+**THIS PAGE ONLY CONTAINS THE SOURCE**
+
 To get the executable, check the links below:
 
 - __WINDOWS__ : itchio

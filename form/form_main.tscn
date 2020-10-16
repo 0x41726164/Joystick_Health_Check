@@ -1,0 +1,821 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://form/form_main.gd" type="Script" id=1]
+[ext_resource path="res://form/g1.png" type="Texture" id=2]
+[ext_resource path="res://form/splash_screen3.png" type="Texture" id=3]
+[ext_resource path="res://form/g2.png" type="Texture" id=4]
+[ext_resource path="res://form/w2.png" type="Texture" id=5]
+[ext_resource path="res://form/w1.png" type="Texture" id=6]
+[ext_resource path="res://form/i2.png" type="Texture" id=7]
+[ext_resource path="res://form/i1.png" type="Texture" id=8]
+[ext_resource path="res://form/border.png" type="Texture" id=9]
+[ext_resource path="res://form/icon.png" type="Texture" id=10]
+[ext_resource path="res://form/key.png" type="Texture" id=11]
+
+[sub_resource type="Animation" id=1]
+resource_name = "splash"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("splashscreen:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("splashscreen/TextureRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("splashscreen/ColorRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="form" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0.12549, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="logo" type="TextureRect" parent="."]
+margin_left = 14.0
+margin_top = 20.0
+margin_right = 192.0
+margin_bottom = 176.0
+texture = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="rr" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 147.0
+margin_top = 53.0
+margin_right = 157.0
+margin_bottom = 61.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="rl" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 115.0
+margin_top = 53.0
+margin_right = 125.0
+margin_bottom = 61.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="rd" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 132.157
+margin_top = 68.1969
+margin_right = 140.157
+margin_bottom = 77.1969
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="rt" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 132.0
+margin_top = 37.0
+margin_right = 140.0
+margin_bottom = 46.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="lr" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 50.875
+margin_top = 53.0
+margin_right = 60.875
+margin_bottom = 61.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ll" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 18.875
+margin_top = 53.0
+margin_right = 28.875
+margin_bottom = 61.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ld" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 35.9994
+margin_top = 67.9982
+margin_right = 43.9994
+margin_bottom = 76.9982
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="lt" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 35.875
+margin_top = 37.0
+margin_right = 43.875
+margin_bottom = 46.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="start" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 91.0
+margin_top = 51.0
+margin_right = 104.0
+margin_bottom = 60.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="select" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 71.0
+margin_top = 51.0
+margin_right = 85.0
+margin_bottom = 60.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="r3" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 91.0
+margin_top = 78.0
+margin_right = 114.0
+margin_bottom = 102.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="l3" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 60.875
+margin_top = 78.0
+margin_right = 83.875
+margin_bottom = 102.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="r1" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 125.0
+margin_top = 16.0
+margin_right = 148.0
+margin_bottom = 25.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="r2" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 125.0
+margin_top = 5.5
+margin_right = 148.0
+margin_bottom = 14.5
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="l1" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 28.875
+margin_top = 16.0
+margin_right = 51.875
+margin_bottom = 25.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="l2" type="TextureRect" parent="logo"]
+modulate = Color( 0, 0, 1, 1 )
+margin_left = 28.875
+margin_top = 5.5
+margin_right = 51.875
+margin_bottom = 14.5
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="info" type="Control" parent="."]
+anchor_left = 0.33
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.52588e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="border" type="TextureRect" parent="info"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="vibration" type="CheckButton" parent="info"]
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.46
+anchor_bottom = 0.165
+margin_left = -0.1
+margin_right = 0.0800018
+mouse_default_cursor_shape = 2
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 0, 1 )
+text = "vibration test"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="cross" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 70.0
+margin_right = 265.0
+margin_bottom = 84.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "PS Cross     / XBOX A / NINTENDO B : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/cross"]
+anchor_left = 1.022
+anchor_right = 1.272
+anchor_bottom = 1.0
+margin_left = -0.144028
+margin_right = -0.144012
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="circle" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 84.0
+margin_right = 266.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "PS Circle     / XBOX B / NINTENDO A : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/circle"]
+anchor_left = 1.017
+anchor_right = 1.262
+anchor_bottom = 1.0
+margin_left = 0.0389709
+margin_right = -0.0260315
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="square" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 98.0
+margin_right = 262.0
+margin_bottom = 112.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "PS Square   / XBOX X /  NINTENDO Y : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/square"]
+anchor_left = 1.017
+anchor_right = 1.266
+anchor_bottom = 1.0
+margin_left = 0.0389862
+margin_right = 0.0220032
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="triangle" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 112.0
+margin_right = 257.0
+margin_bottom = 126.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "PS Triangle / XBOX Y /  NINTENDO X : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/triangle"]
+anchor_left = 1.021
+anchor_right = 1.267
+anchor_bottom = 1.0
+margin_left = -0.0400085
+margin_right = -0.0800171
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="dpad_down" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 140.0
+margin_right = 115.0
+margin_bottom = 154.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "D-Pad Down : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/dpad_down"]
+anchor_left = 2.724
+anchor_right = 3.368
+anchor_bottom = 1.0
+margin_left = -0.0240326
+margin_right = 0.0159607
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="dpad_right" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 154.0
+margin_right = 111.0
+margin_bottom = 168.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "D-Pad Right : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/dpad_right"]
+anchor_left = 2.85
+anchor_right = 3.525
+anchor_bottom = 1.0
+margin_left = 0.0359802
+margin_right = -0.0140076
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="dpad_left" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 168.0
+margin_right = 103.0
+margin_bottom = 182.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "D-Pad Left : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/dpad_left"]
+anchor_left = 3.143
+anchor_right = 3.886
+anchor_bottom = 1.0
+margin_left = -0.0180206
+margin_right = 0.0279846
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="dpad_up" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 182.0
+margin_right = 93.0
+margin_bottom = 196.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "D-Pad Up : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/dpad_up"]
+anchor_left = 3.403
+anchor_right = 4.208
+anchor_bottom = 1.0
+margin_left = -0.0160065
+margin_right = 0.0239868
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="r1" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 210.0
+margin_right = 53.0
+margin_bottom = 224.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "R1 : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/r1"]
+anchor_left = 8.75
+anchor_right = 10.821
+anchor_bottom = 1.0
+margin_left = 0.135971
+margin_right = 0.14798
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="r2" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 224.0
+margin_right = 53.0
+margin_bottom = 238.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "R2 : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/r2"]
+anchor_left = 8.75
+anchor_right = 10.821
+anchor_bottom = 1.0
+margin_left = 0.135986
+margin_right = 0.14798
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="r3" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 238.0
+margin_right = 53.0
+margin_bottom = 252.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "R3 : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/r3"]
+anchor_left = 8.75
+anchor_right = 10.821
+anchor_bottom = 1.0
+margin_left = 0.135986
+margin_right = 0.14798
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="l1" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 266.0
+margin_right = 52.0
+margin_bottom = 280.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "L1 : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/l1"]
+anchor_left = 9.079
+anchor_right = 11.222
+anchor_bottom = 1.0
+margin_left = 0.00297546
+margin_right = 0.141968
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="l2" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 280.0
+margin_right = 52.0
+margin_bottom = 294.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "L2 : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/l2"]
+anchor_left = 9.079
+anchor_right = 11.222
+anchor_bottom = 1.0
+margin_left = 0.00297546
+margin_right = 0.141968
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="l3" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 294.0
+margin_right = 52.0
+margin_bottom = 308.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "L3 : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/l3"]
+anchor_left = 9.079
+anchor_right = 11.222
+anchor_bottom = 1.0
+margin_left = 0.00297546
+margin_right = 0.141968
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="start" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 322.0
+margin_right = 75.0
+margin_bottom = 336.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "START : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/start"]
+anchor_left = 4.9
+anchor_right = 6.103
+anchor_bottom = 1.0
+margin_right = -2.14999
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="select" type="Label" parent="info"]
+margin_left = 25.0
+margin_top = 336.0
+margin_right = 80.0
+margin_bottom = 350.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "SELECT : "
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="output" type="Label" parent="info/select"]
+anchor_left = 4.457
+anchor_right = 5.621
+anchor_bottom = 1.0
+margin_left = 0.000976563
+margin_right = -0.00402832
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+text = "OFF - 0.0"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Me" type="Label" parent="."]
+anchor_left = 0.023
+anchor_top = 0.84
+anchor_right = 0.323
+anchor_bottom = 0.875
+margin_left = 0.199999
+margin_right = 0.199997
+margin_bottom = -3.05176e-05
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+text = "Made by Arad HamidSamiee"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="github" type="TextureButton" parent="Me"]
+anchor_top = 1.322
+anchor_right = 0.139
+anchor_bottom = 3.108
+margin_top = 0.00101852
+margin_right = -0.0200005
+margin_bottom = -0.00298309
+texture_normal = ExtResource( 2 )
+texture_hover = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="web" type="TextureButton" parent="Me"]
+anchor_left = 0.167
+anchor_top = 1.322
+anchor_right = 0.306
+anchor_bottom = 3.108
+margin_left = -0.0599995
+margin_top = 0.00100136
+margin_right = -0.0800056
+margin_bottom = -0.00299835
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="linkedin" type="TextureButton" parent="Me"]
+anchor_left = 0.333
+anchor_top = 1.322
+anchor_right = 0.472
+anchor_bottom = 3.108
+margin_left = 0.0600014
+margin_top = 0.00100136
+margin_right = 0.0399933
+margin_bottom = -0.00299835
+texture_normal = ExtResource( 8 )
+texture_hover = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="splashscreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="splashscreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0.12549, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="splashscreen"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="animations" type="AnimationPlayer" parent="."]
+autoplay = "splash"
+anims/splash = SubResource( 1 )
+[connection signal="pressed" from="Me/github" to="." method="_on_github_pressed"]
+[connection signal="pressed" from="Me/web" to="." method="_on_web_pressed"]
+[connection signal="pressed" from="Me/linkedin" to="." method="_on_linkedin_pressed"]

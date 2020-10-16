@@ -5,8 +5,9 @@ All assets are made by me and the program is made in a day with godot 3.2
 
 **THIS PAGE ONLY CONTAINS THE SOURCE**
 
+
 To get the executable, check the links below:
 
-- __WINDOWS__ : itchio
-- __LINUX__ : s
-- __MAC__ : f
+- _**Windows**_ : itchio
+- _**Linux**_ : s
+- _**Mac**_ : f
